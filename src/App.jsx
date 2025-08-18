@@ -69,12 +69,21 @@ function App() {
   return (
     <div className="p-4">
       {/* Header with download button */}
-      <div className="flex justify-between items-center bg-amber-50 rounded-md py-2 px-4 mb-4 print-hide">
-        <h1 className="text-center font-extrabold">DASHBOARD</h1>
+      <div className=" m-4 flex justify-between items-center bg-blue-800 rounded-md py-2 px-4 mb-4 print-hide">
+        <div className="flex items-center gap-3">
+          <img
+            src="/NESPAK LOGO.png"
+            alt="NESPAK Logo"
+            className="h-8 w-auto drop-shadow-[0_0_2px_rgba(255,255,255,0.5)]"
+          />
+          <h1 className="text-center text-amber-50 font-extrabold">
+            DASHBOARD
+          </h1>
+        </div>
         <div className="flex gap-2">
           <button
             onClick={printToPDF}
-            className="p-2 bg-green-600 text-white rounded-full hover:bg-green-700"
+            className="p-2 bg-blue-950 text-white rounded-full hover:bg-blue-600"
             title="Print to PDF"
           >
             <FaPrint size={20} />

@@ -35,20 +35,20 @@ const ProjectHeader = (props) => {
   }, [totalDays]);
 
   return (
-    <div className="border border-gray-400 rounded-md p-2 w-full">
-      <div className="flex justify-between bg-green-100 px-3 py-1">
+    <div className=" rounded-md py-2 px-4 mb-4 border border-white p-2 w-full">
+      <div className="flex justify-between rounded-md py-2 px-4  space-x-1 bg-blue-300 ">
         <span className="font-semibold">Employer : {employer}</span>
         <span className="font-semibold">Contractor : {contractor}</span>
       </div>
 
-      <div className="flex justify-between bg-green-100 px-3 py-1">
+      <div className="flex justify-between rounded-md py-2 px-4 bg-blue-300 ">
         <span className="font-semibold">
           Project: {project} On Plot No. {plotNo} At {location}
         </span>
         <span className="font-semibold">Consultant : {consultant}</span>
       </div>
 
-      <div className="grid grid-cols-6 text-center mt-1 bg-amber-200">
+      <div className=" rounded-b-md grid grid-cols-6 text-center mt-1 bg-blue-200">
         <div className="border p-1">
           Date
           <br />
