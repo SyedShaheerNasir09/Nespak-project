@@ -23,8 +23,8 @@ const ProgressAnalysisTable = ({
   return (
     <div className="w-full max-w-5*1 mx-auto bg-amber-50 shadow-lg rounded-lg overflow-hidden">
       {/* Header */}
-      <div className="bg-green-200 px-6 py-3 border-b border-amber-50">
-        <h2 className="text-lg font-bold text-black">
+      <div className=" px-6 py-3 border-b border-amber-50">
+        <h2 className=" text-center font-bold text-black">
           OVERALL PROGRESS ANALYSIS
         </h2>
       </div>

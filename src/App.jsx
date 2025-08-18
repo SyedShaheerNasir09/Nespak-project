@@ -1,6 +1,5 @@
 import React, { useRef } from "react";
-import html2canvas from "html2canvas";
-
+import { FaPrint } from "react-icons/fa"; // Add this import
 import ProjectHeader from "./components/ProjectHeader";
 import TimeDataClaims from "./components/TimeDataClaims";
 import ComData from "./components/ComData";
@@ -18,41 +17,6 @@ import Photos from "./components/Photos";
 
 function App() {
   const dashboardRef = useRef();
-
-  const downloadPDF = async () => {
-    try {
-      console.log("Starting download...");
-
-      const canvas = await html2canvas(dashboardRef.current, {
-        scale: 1,
-        useCORS: true,
-        allowTaint: false,
-        backgroundColor: "#ffffff",
-        removeContainer: true,
-        ignoreElements: (element) => {
-          return element.tagName === "BUTTON";
-        },
-        onclone: (clonedDoc) => {
-          // Add any custom modifications to the cloned document before rendering
-          const elements = clonedDoc.getElementsByClassName("no-print");
-          Array.from(elements).forEach((el) => el.remove());
-        },
-      });
-
-      console.log(" Canvas created successfully");
-
-      // Create download link
-      const link = document.createElement("a");
-      link.download = `dashboard-${new Date().toISOString().split("T")[0]}.png`;
-      link.href = canvas.toDataURL("image/png");
-      link.click();
-
-      console.log(" Download initiated");
-    } catch (error) {
-      console.error(" Download failed:", error);
-      // You might want to show a user-friendly error message here
-    }
-  };
 
   // NEW PRINT TO PDF FUNCTION - Most Reliable Method
   const printToPDF = () => {
@@ -110,15 +74,10 @@ function App() {
         <div className="flex gap-2">
           <button
             onClick={printToPDF}
-            className="px-4 py-2 bg-green-600 text-white rounded hover:bg-green-700"
+            className="p-2 bg-green-600 text-white rounded-full hover:bg-green-700"
+            title="Print to PDF"
           >
-            Print to PDF
-          </button>
-          <button
-            onClick={downloadPDF}
-            className="px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700"
-          >
-            Download PNG
+            <FaPrint size={20} />
           </button>
         </div>
       </div>

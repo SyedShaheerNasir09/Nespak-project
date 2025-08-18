@@ -74,7 +74,7 @@ const ProjectProgressTable = ({
   return (
     <div className="w-full bg-amber-50 p-6 rounded-lg shadow-lg">
       <div className="mb-4">
-        <h2 className="text-xl font-bold text-gray-800 mb-2">
+        <h2 className=" text-center text-xl font-bold text-gray-800 mb-2">
           PROJECT PROGRESS SCHEDULE
         </h2>
       </div>

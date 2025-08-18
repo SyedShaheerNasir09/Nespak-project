@@ -13,7 +13,7 @@ import {
 const ProgressSCurve = ({ data }) => {
   return (
     <div className="w-full bg-amber-50 p-8 shadow-md mb-6">
-      <h2 className="text-xl font-semibold text-gray-800 mb-4">
+      <h2 className=" text-center text-xl font-bold text-gray-800 mb-4">
         Progress S-Curve (Planned vs Actual)
       </h2>
       <ResponsiveContainer width="100%" height={400}>
