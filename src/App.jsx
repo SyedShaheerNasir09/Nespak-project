@@ -86,15 +86,15 @@ function App() {
       <div ref={dashboardRef} className="print-content">
         <div className="mb-4">
           <ProjectHeader
-            employer="AL GHURAIR PROPERTIES LLC"
-            contractor="SALEH CONSTRUCTIONS L.L.C."
-            consultant="ARIF & BINTOAK CONSULTING ARCHITECTS & ENGINEERS"
-            project="PROPOSED RESIDENTIAL BUILDING B+G+4+GYM ROOF "
+            employer="Punjab Central Business District Development Authority"
+            contractor="Hasnat & Sons Contracting LLC"
+            consultant="Nespak International (Pvt) Ltd"
+            project="Construction of Celestia Tower "
             plotNo="124-0133"
-            location="Al Muraqqabat, Dubai U.A.E."
-            reportNo={42}
-            monthNo={10}
-            weekNo={42}
+            location="Lahore."
+            reportNo={1}
+            monthNo={1}
+            weekNo={1}
             totalDays={639}
           />
         </div>
