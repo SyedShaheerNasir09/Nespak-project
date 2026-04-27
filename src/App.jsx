@@ -94,18 +94,7 @@ function App() {
       {/* Dashboard Content */}
       <div ref={dashboardRef} className="print-content">
         <div className="mb-4">
-          <ProjectHeader
-            employer="Punjab Central Business District Development Authority"
-            contractor="Hasnat & Sons Contracting LLC"
-            consultant="Nespak International (Pvt) Ltd"
-            project="Construction of Celestia Tower "
-            plotNo="124-0133"
-            location="Lahore."
-            reportNo={1}
-            monthNo={1}
-            weekNo={1}
-            totalDays={639}
-          />
+          <ProjectHeader />
         </div>
 
         <div className="p-4 grid grid-cols-2 gap-4">
